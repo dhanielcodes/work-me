@@ -1,6 +1,7 @@
 <template>
-  <div class="hello">
-    
+  <div id="nav">
+    <router-link to="/">Home</router-link> |
+    <router-link to="/get_started">About</router-link>
   </div>
 </template>
 

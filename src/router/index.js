@@ -9,7 +9,22 @@ const routes = [
     path: "/get_started",
     name: "GetStarted",
     component: () => import("../views/GetStarted.vue")
-  }
+  },
+  {
+    path: "/beginner",
+    name: "Beginner",
+    component: () => import("../workoutViews/beginner.vue")
+  },
+  {
+    path: "/advance",
+    name: "Advance",
+    component: () => import("../workoutViews/advance.vue")
+  },
+  {
+    path: "/pro",
+    name: "Pro",
+    component: () => import("../workoutViews/pro.vue")
+  },
 ];
 
 export const router = createRouter({

@@ -1,7 +1,7 @@
 <template>
   <div>
     <Nav />
-nav    <img class="bg" src="./assets/bg.svg" alt="" srcset="">
+    <img class="bg" src="./assets/bg.svg" alt="" srcset="">
     <router-view />
   </div>
 </template>

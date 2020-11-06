@@ -1,6 +1,7 @@
 <template>
   <div>
     <Nav />
+    <router-view />
   </div>
 </template>
 
@@ -20,6 +21,6 @@ export default {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
 }
 </style>

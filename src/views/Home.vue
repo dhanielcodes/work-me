@@ -1,22 +1,14 @@
 <template>
     <div>
         <h1>Home</h1>
+        <img src="../assets/bg.svg" alt="" srcset="">
     </div>
 </template>
 
 <script>
-import { reactive, toRefs } from 'vue'
 
 export default {
-    setup () {
-        const state = reactive({
-            count: 0,
-        })
-    
-        return {
-            ...toRefs(state),
-        }
-    }
+  
 }
 </script>
 

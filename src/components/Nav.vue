@@ -25,7 +25,7 @@ a{
 h3{
   font-style: italic;
   color: white;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 100
 }
 img{

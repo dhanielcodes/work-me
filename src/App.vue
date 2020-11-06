@@ -22,7 +22,7 @@ export default {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'gilroy',Helvetica, Arial, sans-serif;
 }
 body{
   background: black;

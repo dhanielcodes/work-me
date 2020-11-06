@@ -1,7 +1,6 @@
 <template>
-    <div>
+    <div class="home">
         <h1>Home</h1>
-        <img src="../assets/bg.svg" alt="" srcset="">
     </div>
 </template>
 
@@ -13,5 +12,8 @@ export default {
 </script>
 
 <style scoped>
+.home{
+    color: white
+}
 
 </style>

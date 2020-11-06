@@ -14,6 +14,6 @@ export default {
 <style scoped>
 .home{
     color: white
-}workoutViews
+}
 
 </style>

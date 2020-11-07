@@ -3,33 +3,37 @@
         <div class="bg"></div>
         <img src="../assets/bg_line_green.svg" alt="" class="side_bg1 side">
         <img src="../assets/bg_line_yellow.svg" alt="" class="side_bg2 side">
-
-        <div class="main" v-if="session">
-            <ul v-for="(item, index) in store.state.beginner.slice(a, b)" :key="index">
-                <li >
-                    <h1>{{item.name}}</h1>
-                    <h2>{{item.amount}}</h2>
-                    <p>{{item.info}}</p>
-                </li>
-                <div class="btns">
-                    <button @click="selectResponse(item)" v-on:click="next" :class="select ? check(item) : ''">Done</button>
-                    <button v-on:click="next">Skip</button>
+        
+            <button v-if="start" @click="start = false" class="count">Start</button>
+            <div v-else class="overv">
+                <div class="main" v-if="session">
+                    <ul v-for="(item, index) in store.state.beginner.slice(a, b)" :key="index">
+                        <li >
+                            <h1>{{item.name}}</h1>
+                            <h2>{{item.amount}}</h2>
+                            <p>{{item.info}}</p>
+                        </li>
+                        <div class="btns">
+                            <button @click="selectResponse(item)" v-on:click="next" :class="select ? check(item) : ''">Done</button>
+                            <button v-on:click="next">Skip</button>
+                        </div>
+                    </ul>
+                    <div class="bared">
+                        <div class="bar" :style="{ 'width' : bar + '%'}"></div>
+                    </div>
                 </div>
-            </ul>
-            <div class="bared">
-                <div class="bar" :style="{ 'width' : bar + '%'}"></div>
+                <div class="score" v-else>
+                    <h1>You completed</h1>
+                    <h2>{{score}}/{{store.state.beginner.length}} Workouts</h2>
+                    <div class="btns">
+                        <button @click="restart">Restart</button>
+                        <button @click="mode">Change mode</button>
+                        <button @click="home">Home</button>
+                    </div>
+                
+                </div>
             </div>
-        </div>
-        <div class="score" v-else>
-            <h1>You completed</h1>
-            <h2>{{score}}/{{store.state.beginner.length}} Workouts</h2>
-            <div class="btns">
-                <button @click="restart">Restart</button>
-                <button @click="mode">Change mode</button>
-                <button @click="home">Home</button>
-            </div>
-         
-        </div>
+
     </div>
 </template>
 
@@ -48,6 +52,7 @@ export default {
             score: 0,
             session: true,
             bar: 0,
+            start: true,
             router: useRouter(),
         })
         const selectResponse = (e) => {
@@ -84,7 +89,9 @@ export default {
                 state.bar = 0
         }
         const home = () => state.router.push('/')
-        const mode = () => state.router.push('/get_started')        
+        const mode = () => state.router.push('/get_started')   
+        
+
 
         return {
             ...toRefs(state),
@@ -93,7 +100,7 @@ export default {
             next,
             restart,
             home,
-            mode
+            mode,
         }
     },
 }
@@ -121,6 +128,23 @@ export default {
     transform: translateY(-50%);
     left: 0;
     width: 150px;
+}
+.count{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  transition: all 300ms;
+  font-size: 100px;
+  padding: 20px;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    background: #34CEFF;
+    outline: none;
 }
 ul{
     position: absolute;

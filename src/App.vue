@@ -2,7 +2,11 @@
   <div>
     <Nav />
     <img class="bg" src="./assets/bg.svg" alt="" srcset="">
-    <router-view />
+    <router-view v-slot="trans">
+      <transition name="v">
+          <component :is="trans.Component"></component>
+      </transition>
+    </router-view>
   </div>
 </template>
 
@@ -36,5 +40,17 @@ body{
   object-fit: cover;
   z-index: -1;
   pointer-events: none    
+}
+.v-enter-active, .v-leave-active{
+  transition: all .3s
+}
+.v-enter-active{
+  transition-delay: .5s;
+}
+.v-enter-from, .v-leave-to{
+  opacity: 0;
+}
+.v-leave-from, .v-enter-to{
+  opacity: 1;
 }
 </style>

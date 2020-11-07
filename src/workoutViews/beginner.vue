@@ -202,10 +202,12 @@ ul p{
 }
 .score h1{
     font-weight: 500;
-    font-size: 30px;
+    font-size: 45px;
 }
 .score h2{
     margin-top: 40px;
+    font-size: 40px;
+
 }
 @media (max-width: 900px){
     .side{

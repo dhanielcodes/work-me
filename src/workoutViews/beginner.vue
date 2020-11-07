@@ -5,7 +5,7 @@
         <img src="../assets/bg_line_yellow.svg" alt="" class="side_bg2 side">
 
         <div class="main" v-if="session">
-            <ul v-for="(item, index) in store.state.questions.slice(a, b)" :key="index">
+            <ul v-for="(item, index) in store.state.beginner.slice(a, b)" :key="index">
                 <li >
                     <h1>{{item.name}}</h1>
                     <h2>{{item.amount}}</h2>
@@ -22,7 +22,7 @@
         </div>
         <div class="score" v-else>
             <h1>You completed</h1>
-            <h2>{{score}}/{{store.state.questions.length}} Workouts</h2>
+            <h2>{{score}}/{{store.state.beginner.length}} Workouts</h2>
             <div class="btns">
                 <button @click="restart">Restart</button>
                 <button @click="mode">Change mode</button>
@@ -65,13 +65,13 @@ export default {
                 }
         }
         const next = () => {
-                if(store.state.questions.length - 1 == state.a){
+                if(store.state.beginner.length - 1 == state.a){
                     state.session = false
                 }
                 state.a++
                 state.b++
                 state.select = false
-                state.bar = state.bar + (100/store.state.questions.length)
+                state.bar = state.bar + (100/store.state.beginner.length)
         }
 
 

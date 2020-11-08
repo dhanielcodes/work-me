@@ -25,15 +25,20 @@
                         <div class="bar" :style="{ 'width' : bar + '%'}"></div>
                     </div>
                 </div>
-                <div class="score" v-else>
-                    <h1>You completed</h1>
-                    <h2>{{score}}/{{store.state.advance.length}} Workouts</h2>
-                    <div class="btns">
-                        <button @click="restart">Restart</button>
-                        <button @click="mode">Change mode</button>
-                        <button @click="home">Home</button>
-                    </div>
+                <div class="score_main" v-else>
+                    <img class="celeb" src="../assets/celeb.svg" />
+                    <img class="man" src="../assets/man.svg" />
+                    <div class="score">
+                        <h1>You completed</h1>
+                        <h2>{{score}}/{{store.state.beginner.length}} Workouts</h2>
+                        <div class="btns">
+                            <button @click="restart">Restart</button>
+                            <button @click="mode">Change mode</button>
+                            <button @click="home">Home</button>
+                        </div>
                 
+                    </div>
+                    
                 </div>
             </div>
 
@@ -253,6 +258,19 @@ ul p{
     margin-top: 40px;
     font-size: 40px;
 
+}
+.celeb{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+}
+.man{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 @media (max-width: 900px){
     .side{

@@ -4,7 +4,11 @@
         <img src="../assets/bg_line_green.svg" alt="" class="side_bg1 side">
         <img src="../assets/bg_line_yellow.svg" alt="" class="side_bg2 side">
         
-            <button v-if="start" @click="start = false" class="count">Start</button>
+            <div class="start" v-if="start">
+                <h1>BEGINNER</h1>
+                <button @click="start = false" class="count">Start</button>
+                <h2><router-link to="/get_started">Cancel</router-link></h2>
+            </div>
             <div v-else class="overv">
                 <div class="main" v-if="session">
                     <ul v-for="(item, index) in store.state.beginner.slice(a, b)" :key="index">
@@ -129,15 +133,18 @@ export default {
     left: 0;
     width: 150px;
 }
+.start{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center
+}
 .count{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 40px;
-  transition: all 300ms;
-  font-size: 100px;
-  padding: 20px;
+    margin-top: 20px;
+    transition: all 300ms;
+    font-size: 100px;
+    padding: 20px;
     border: none;
     margin-right: 10px;
     cursor: pointer;
@@ -145,6 +152,21 @@ export default {
     border-radius: 10px;
     background: #34CEFF;
     outline: none;
+}
+.start h2{
+     margin-top: 40px;
+}
+.start a{
+    font-size: 20px;
+    transition: all 300ms;
+    padding: 20px;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #EE7272
 }
 ul{
     position: absolute;

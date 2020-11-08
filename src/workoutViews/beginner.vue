@@ -60,7 +60,7 @@ export default {
             b: 1,
             select: false,
             score: 0,
-            session: false,
+            session: true,
             bar: 0,
             start: true,
             router: useRouter(),

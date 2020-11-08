@@ -199,52 +199,6 @@ const store = createStore({
             info: 'Bend your knees slightly, and jump into the air As you jump, spread your legs to be about shoulder-width apart. Stretch your arms out and over your head Jump back to starting position'
           },
           {
-            name:'Lunges',
-            amount: '15 reps',
-            done: true,
-            info: "Start by standing up tall. Step forward with one foot until your leg reaches a 90-degree angle. Lift your front lunging leg to return to the starting position. Repeat 10 to 12 reps on one leg, or switch off between legs until you've totaled 10 to 12 reps per leg."
-          },
-          {
-            name:'Heel touch',
-            amount: '15 reps',
-            done: true,
-            info: "Lay down with your back on the ground and your knees bent and pointed towards the ceiling. With your arms on your side raise your shoulders slightly off the ground. Using your abs rotate your right hand down to your right foot and then back up."
-          },
-          {
-            name:'Knee push ups',
-            amount: '11 reps',
-            done: true,
-            info: "Start in high plank with your shoulders above your wrists and your spine long. Drop to your knees, rolling to the top of your knees to protect your knee caps. Bend your elbows and lower your chest to the ground. Push through the palms of your hands to straighten your arms."
-          },
-          {
-            name:'Abdominal Crunches',
-            amount: '16 reps',
-            done: true,
-            info: 'Lie down on your back. Plant your feet on the floor, hip-width apart. Bend your knees and place your arms across your chest. Contract your abs and inhale. Exhale and lift your upper body, keeping your head and neck relaxed Inhale and return to the starting position.'
-          },
-          {
-            name:'Squats',
-            amount: '20 reps',
-            done: true,
-            info: "Stand up with your feet shoulder-width apart. Bend your knees, press your hips back and stop the movement once the hip joint is slightly lower than the knees. Press your heels into the floor to return to the initial position. Repeat until set is complete. PROPER FORM AND BREATHING PATTERN."
-          },
-          {
-            name:'Push ups',
-            amount: '8 reps',
-            done: true,
-            info: 'Get down on all fours, placing your hands slightly wider than your shoulders. Straighten your arms and legs. Lower your body until your chest nearly touches the floor. Pause, then push yourself back up.'
-          },
-
-
-
-
-          {
-            name:'Mountain climber',
-            amount: '16 reps',
-            done: true,
-            info: 'Put both hands and knees on the floor. Place your right foot near your right hand and extend your left leg behind you. In one smooth motion, switch your legs, keeping your arms in the same position. In one smooth motion, switch your legs, keeping your arms in the same position.'
-          },
-          {
             name:'Donkey kicks',
             amount: '15 reps',
             done: true,
@@ -267,6 +221,59 @@ const store = createStore({
             amount: '8 reps',
             done: true,
             info: 'Kneel down with your back to the bench. Put your hands on the floor, shoulders over your wrists and elbows at 45 degrees. Brace your core, glutes, and quads. Push into the floor to return to starting position, extending your elbows. Complete 2 to 4 sets of 8 to 20 repetitions'
+          },
+          {
+            name:'Lunges',
+            amount: '15 reps',
+            done: true,
+            info: "Start by standing up tall. Step forward with one foot until your leg reaches a 90-degree angle. Lift your front lunging leg to return to the starting position. Repeat 10 to 12 reps on one leg, or switch off between legs until you've totaled 10 to 12 reps per leg."
+          },
+          {
+            name:'Abdominal Crunches',
+            amount: '16 reps',
+            done: true,
+            info: 'Lie down on your back. Plant your feet on the floor, hip-width apart. Bend your knees and place your arms across your chest. Contract your abs and inhale. Exhale and lift your upper body, keeping your head and neck relaxed Inhale and return to the starting position.'
+          },
+          {
+            name:'Squats',
+            amount: '20 reps',
+            done: true,
+            info: "Stand up with your feet shoulder-width apart. Bend your knees, press your hips back and stop the movement once the hip joint is slightly lower than the knees. Press your heels into the floor to return to the initial position. Repeat until set is complete. PROPER FORM AND BREATHING PATTERN."
+          },
+          {
+            name:'Heel touch',
+            amount: '15 reps',
+            done: true,
+            info: "Lay down with your back on the ground and your knees bent and pointed towards the ceiling. With your arms on your side raise your shoulders slightly off the ground. Using your abs rotate your right hand down to your right foot and then back up."
+          },
+          {
+            name:'Knee push ups',
+            amount: '11 reps',
+            done: true,
+            info: "Start in high plank with your shoulders above your wrists and your spine long. Drop to your knees, rolling to the top of your knees to protect your knee caps. Bend your elbows and lower your chest to the ground. Push through the palms of your hands to straighten your arms."
+          },
+          
+          {
+            name:'Push ups',
+            amount: '8 reps',
+            done: true,
+            info: 'Get down on all fours, placing your hands slightly wider than your shoulders. Straighten your arms and legs. Lower your body until your chest nearly touches the floor. Pause, then push yourself back up.'
+          },
+
+
+
+
+          {
+            name:'Mountain climber',
+            amount: '16 reps',
+            done: true,
+            info: 'Put both hands and knees on the floor. Place your right foot near your right hand and extend your left leg behind you. In one smooth motion, switch your legs, keeping your arms in the same position. In one smooth motion, switch your legs, keeping your arms in the same position.'
+          },
+          {
+            name:'Squats',
+            amount: '20 reps',
+            done: true,
+            info: "Stand up with your feet shoulder-width apart. Bend your knees, press your hips back and stop the movement once the hip joint is slightly lower than the knees. Press your heels into the floor to return to the initial position. Repeat until set is complete. PROPER FORM AND BREATHING PATTERN."
           },
           {
             name:'Wall calf raises',
@@ -297,8 +304,59 @@ const store = createStore({
             amount: '30 secs',
             done: true,
           },
-
-
+          {
+            name:'Plank',
+            amount: '30 secs',
+            done: true,
+            info: 'Get in the pushup position, only put your forearms on the ground instead of your hands. Squeeze your glutes and tighten your abdominals. Keep a neutral neck and spine. Create a straight, strong line from head to toes – a plank, if you will. Hold that position.'
+          },
+          {
+            name:'Leg raises',
+            amount: '15 reps',
+            done: true,
+            info: "Lie on your back, legs straight and together. Keep your legs straight and lift them all the way up to the ceiling until your butt comes off the floor. Slowly lower your legs back down till they're just above the floor. Hold for a moment. Raise your legs back up. Repeat."
+          },
+          {
+            name:'Rusian twist',
+            amount: '30 reps',
+            done: true,
+            info: "Lie down with your legs bent at the knees. Elevate your upper body so that it creates a V shape with your thighs. Twist your torso to the right, and then reverse the motion, twisting it to the left. Repeat this movement until set is complete. PROPER FORM AND BREATHING PATTERN."
+          },
+          {
+            name:'Incline push ups',
+            amount: '8 reps',
+            done: true,
+            info: "Stand in front of your box or bench, then squat or bend down and place both hands on either side of it with your fingers pointing forward. Once your hands are in the right position, step your body back into a plank position, one leg at a time."
+          },
+          {
+            name:'Side lying leg lift',
+            amount: '30 reps',
+            done: true,
+            info: "Lie down on your right side on a mat or the floor. Place your arm straight on the floor under your head or bend your elbow and cradle your head for support. As you exhale, gently raise your left leg off the lower leg. Inhale and lower the leg back down to meet the right leg."
+          },
+          {
+            name:'Step ups',
+            amount: '5 reps',
+            done: true,
+            info: 'To start, place your entire right foot onto the bench or chair. Press through your right heel as you step onto the bench, bringing your left foot to meet your left so you are standing on the bench. Return to the starting position by stepping down with the right foot, then the left so both feet are on the floor.'
+          },
+          {
+            name:'Spiderman push ups',
+            amount: '6 reps',
+            done: true,
+            info: "Set up as you would for a regular push up, so start at the top of the push up position with your hands on the floor, arms straight and underneath your shoulders. Step your feet back behind you and lift your knees. Engage your glutes, tense your legs and brace your core to keep your body rigid."
+          },
+          {
+            name:'Sumo calf raises',
+            amount: '30 reps',
+            done: true,
+            info: "Start in a sumo squat position, with your feet in a wide stance, your toes pointing out to the sides and your thighs parallel to the floor. Raise your heels off the floor and squeeze your calves. Lower your heels and return to the starting position. Repeat until set is complete."
+          },
+          {
+            name:'Rest',
+            amount: '30 secs',
+            done: true,
+          },
 
           {
             name:'Cobra stretch',

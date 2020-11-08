@@ -62,7 +62,7 @@ export default {
             score: 0,
             session: false,
             bar: 0,
-            start: false,
+            start: true,
             router: useRouter(),
         })
         const selectResponse = (e) => {

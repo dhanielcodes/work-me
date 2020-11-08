@@ -30,7 +30,7 @@
                     <img class="man" src="../assets/man.svg" />
                     <div class="score">
                         <h1>You completed</h1>
-                        <h2>{{score}}/{{store.state.beginner.length}} Workouts</h2>
+                        <h2>{{score}}/{{store.state.pro.length}} Workouts</h2>
                         <div class="btns">
                             <button @click="restart">Restart</button>
                             <button @click="mode">Change mode</button>
